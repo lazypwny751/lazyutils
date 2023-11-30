@@ -8,7 +8,7 @@ build:
 	$(MAKE) -C src
 
 install:
-	mkdir -pv $(BINDIR)
+	src/mkdir -p $(BINDIR)
 
 clean:
 	rm -vf src/*.h
