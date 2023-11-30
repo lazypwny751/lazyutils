@@ -1,0 +1,4 @@
+enum BOOLEAN {
+	TRUE,
+	FALSE
+};
