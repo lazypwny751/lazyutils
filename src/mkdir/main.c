@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "boolean.h"
 
 enum OPT {
     SINGLE,
@@ -11,7 +10,7 @@ enum OPT {
 
 // Main function (block)
 int main(int argc, char *argv[]) {
-    enum BOOLEAN _STATUS_ = TRUE;
+    int _STATUS_ = 0;
     enum OPT _OPT_ = SINGLE;
 
     // Option definition
@@ -33,7 +32,7 @@ int main(int argc, char *argv[]) {
             break;
         default:
             printf("Unknown option.\n");
-            _STATUS_ = FALSE;
+            _STATUS_ = 1;
     }
 
     return _STATUS_;

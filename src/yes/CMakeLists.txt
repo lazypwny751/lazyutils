@@ -1,0 +1,5 @@
+add_executable(yes 
+    main.c
+)
+
+target_link_libraries(yes PRIVATE common)
