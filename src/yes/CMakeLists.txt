@@ -3,3 +3,7 @@ add_executable(yes
 )
 
 target_link_libraries(yes PRIVATE common)
+
+install(TARGETS yes
+    RUNTIME DESTINATION bin
+)
