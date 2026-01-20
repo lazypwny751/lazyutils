@@ -10,11 +10,22 @@ cmake --build build --config Release
 sudo cmake --install build --prefix /usr/local
 ```
 
-> Note: You need to have CMake and a C compiler installed.
-> On Debian-based systems, you can install them using:
+> [!Note]
+> You need to have **CMake** and any **C compiler** installed. <br>
+> On **Debian-based** systems, you can install by typing:
 > ```sh
 > sudo apt-get install cmake build-essential clang
 > ```
+> for arch linux and derivatives:
+> ```sh
+> sudo pacman -S --needed base-devel cmake clang
+> ```
+> and for fedora based systems:
+> ```sh
+> sudo dnf install -y clang lld cmake make libcxx libcxx-devel
+> ```
+
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
